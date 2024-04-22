@@ -47,7 +47,7 @@ module.exports = function() {
   var appPath = process.cwd();
 
   // Use the app's local Sails in `node_modules` if it's extant and valid
-  var localSailsPath = nodepath.resolve(appPath, 'node_modules/sails');
+  var localSailsPath = nodepath.resolve(appPath, '../node_modules/sails');
   if (Sails.isLocalSailsValid(localSailsPath, appPath)) {
     var localSails = require(localSailsPath);
     // console.timeEnd('cli_prelift');
